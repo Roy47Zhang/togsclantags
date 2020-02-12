@@ -207,7 +207,7 @@ public void SQLCallback_Connect(Database oDB, const char[] sError, any data)
 											`server_ip` VARCHAR(300) NULL DEFAULT '',\
 											`setup_order` INT(10) NULL DEFAULT 0,\
 											`dont_remove` INT(2) NULL DEFAULT 1,\
-											PRIMARY KEY (`id`)) DEFAULT CHARSET=latin1 AUTO_INCREMENT=1");
+											PRIMARY KEY (`id`)) DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=1");
 		g_oDatabase.Query(SQLCallback_Void, sQuery, 1);
 	}
 }
